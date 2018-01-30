@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="cart.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="cart.js"></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    
+    <main>
+            <h1>Shopping Cart</h1>
+            <section class="cart">
+
+                <article class="item" id="bananas">                    
+
+                        <div class="info">
+                            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+                            <h3>Banana</h3>
+                            <span class="prodQuantity"> 
+                                <input type="number" class="qty" min="0"/>
+                                x <span class="prodPrice">$0.00</span> 
+                            </span>
+                            <span class="stockStatus"> In Stock</span>
+                        </div>  
+                                                    
+                        <div class="prodTotal">
+                            <span>$0.00</span>
+                        </div>
+                </article>
+
+                <article class="item" id="apples">                    
+
+                        <div class="info">                        
+                            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+                            <h3>Apple</h3>
+                            <span class="prodQuantity"> 
+                                <input type="number" class="qty" min="0"/>
+                                x <span class="prodPrice">$0.00</span> 
+                            </span>
+                            <span class="stockStatus"> In Stock</span>
+                        </div>  
+                
+                        <div class="prodTotal">
+                            $0.00
+                        </div>
+
+                </article>
+                
+                <article class="item" id="oranges">
+
+                        <div class="info">                            
+                            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
+                            <h3>Orange</h3>
+                            <span class="prodQuantity"> 
+                                <input type="number" class="qty" min="0"/>
+                                x <span class="prodPrice">$0.00</span> 
+                                </span>
+                            <span class="stockStatus"> In Stock</span>
+                        </div>  
+                                        
+                        <div class="prodTotal">
+                            $0.00
+                        </div>
+
+                </article>
+            
+        </section>
+                        
+        <section class="totals">
+            <div class="totalRow"><span class="label">Subtotal</span><span class="value subtotal">$35.00</span></div>            
+            <div class="totalRow"><span class="label">Shipping</span><span class="value shipping">$5.00</span></div>            
+            <div class="totalRow"><span class="label">Tax</span><span class="value taxes">$4.00</span></div>
+            <div class="totalRow final"><span class="label">Total</span><span class="value total">$44.00</span></div>
+            <div class="totalRow"><a href="#" class="btn continue">Checkout</a></div>
+        </section>
+    </main>
+      
+</body>
+</html>

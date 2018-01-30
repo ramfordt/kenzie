@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+
+body {
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  width: 75%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20em;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  padding: 1em 0;
+  border-bottom: 1px solid #dadada;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+}
+
+.item {
+  box-sizing:border-box;
+  width: 100%;
+  padding: 1.5em;
+  border-bottom: 1px solid #fafafa;
+  display: table;
+}
+.item:nth-child(even) {
+  background: #fafafa;
+}
+.item .info,
+.item .prodTotal  {
+  display: table-cell;
+}
+
+.item img {
+    max-width: 100%;
+    display: inline;
+    padding-right: 1em;
+    float: left;
+    width: 8em;
+}
+.item .prodQuantity {
+    font-size: .85em;
+    color: #777777;  
+}
+.item .stockStatus {
+    color: #82CA9C;
+    font-size: .85em;
+    font-weight: bold;
+    padding: .5em 0 0 1em;
+    text-transform: uppercase;
+}
+.item .stockStatus.out {
+    color: #F69679;
+}
+.item input.qty {
+    width: 2em;
+    text-align: center;
+    font-size: 1em;
+    padding: .25em;
+}
+.item .prodTotal {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+    color: #777777;  
+}
+
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  letter-spacing: -.015em;
+  font-size: 1em;
+  padding: 1em 3em;
+  color: #fff;
+  background: #82ca9c;
+  font-weight: bold;
+  border-radius: 50px;
+  float: right;
+  text-align: right;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+.btn:after {
+  content: "\276f";
+  padding: .5em;
+  position: relative;
+  right: 0;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+.btn:hover, .btn:focus, .btn:active {
+  background: #f69679;
+}
+.btn:hover:after, .btn:focus:after, .btn:active:after {
+  right: -10px;
+}
+
+/* TOTAL AND CHECKOUT  */
+.totals {
+  float: right;
+  width: 35%;
+  min-width:200px;
+}
+.totals .totalRow {
+  padding: .5em;
+  text-align: right;
+}
+.totals .totalRow.final {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.totals .totalRow span {
+  display: inline-block;
+  padding: 0 0 0 1em;
+  text-align: right;
+}
+.totals .totalRow .label {
+  font-size: .85em;
+  text-transform: uppercase;
+  color: #777;
+}
+.totals .totalRow .value {
+  letter-spacing: -.025em;
+  width: 35%;
+  font-family: "Droid Serif", serif;  
+}
+
+.outofstock {
+  color:red !important;
+}
+.limitedsupply {
+  color:orange !important;
+}
+
+@media only screen and (max-width: 39.375em) {
+  main {
+    width: 98%;
+    padding: 2% 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding: 10% 5%;
+  }
+
+  .cart img {
+    width: 25%;
+  }
+
+  a.btn.continue {
+    width: 100%;
+    text-align: center;
+  }
+}
