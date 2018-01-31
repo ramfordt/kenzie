@@ -4,7 +4,7 @@
       Output: product line totals (double)
 */
 function calculateProdTotal (price, quantity) {
-    return price * quantity;
+    return 0;   // replace this!
 }
 
 /* 2. Complete the function below to calculate gross cart totals
@@ -16,7 +16,7 @@ function calculateProdTotal (price, quantity) {
             always have 3 elements (i.e., bananas, oranges, apples)
 */
 function calculateSubtotal (prodTotals) {
-    return prodTotals[0] + prodTotals[1] + prodTotals[2];
+    return 0;   // replace this!
 }
 
 /* 3. Complete the function below to calculate added taxes
@@ -25,7 +25,7 @@ function calculateSubtotal (prodTotals) {
       Output: added taxes for the cart (double)
 */
 function calculateTaxes(grossTotal, taxRate) {
-    return grossTotal * taxRate;
+    return 0;   // replace this!
 }
 
 /* 4. Complete the function below to calculate total
@@ -35,7 +35,7 @@ function calculateTaxes(grossTotal, taxRate) {
       Output: total cart amount inclusive of shipping and taxes (double)
 */
 function calculateTotal (grossTotal, addedShipping, addedTax) {
-    return grossTotal + addedShipping + addedTax;
+    return 0;   // replace this!
 }
 
 /* 5. We want to inform the users when certain items run out of stock
@@ -44,6 +44,7 @@ function calculateTotal (grossTotal, addedShipping, addedTax) {
       Input: product is either "banana", "apple", or "orange"
       Input: selected is the amount selected on the shopping cart
       Input: availability is the total amount in stock available
+      Output: none
 
       This assignment is a little flexible. Given the combination of number
       of items selected and the product availability, you can choose what 
@@ -61,12 +62,5 @@ function calculateTotal (grossTotal, addedShipping, addedTax) {
 
 */
 function updateProdAvailability(product, selected, availability) {
-    var available = availability - selected;
-    if (available == 0) {
-        updateProdAvailabilityLabel(product, "OUT OF STOCK", OUT_OF_STOCK);
-    } else if (available <= 3) {
-        updateProdAvailabilityLabel(product, "LIMITED SUPPLY", LIMITED_SUPPLY);
-    } else {
-        updateProdAvailabilityLabel(product, "IN STOCK", AVAILABLE);
-    }
+    return; // replace this!
 }
